@@ -4,13 +4,14 @@ import Shapes.Point;
 import Shapes.Shape;
 import Shapes.Sprite;
 
+
 public class Cell {
     private int x;
     private int y;
 
     public Cell(int x, int y) {
-        this.x = 3;
-        this.y = 5;
+        this.x = x;
+        this.y = y;
     }
 
     public Shape getShape() {
@@ -18,8 +19,10 @@ public class Cell {
     }
 
     public void update() {
+        System.out.println("test");
     }
     public Sprite getSprite() {
         return null;
     }
+
 }

@@ -13,8 +13,8 @@ import java.awt.*;
 public class Controller implements Runnable{
     private Thread thread;
     private boolean running = false;
-    private int fps = 25;
-    private int ups = 4;
+    private int fps = 60;
+    private int ups = 1;
     private int width = 1920;
     private int height = 1080;
     private int scale = 40;

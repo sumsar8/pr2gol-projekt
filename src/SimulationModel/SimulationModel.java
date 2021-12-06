@@ -1,5 +1,6 @@
 package SimulationModel;
 
+import Shapes.Point;
 import Shapes.Scene;
 import Shapes.Shape;
 import Shapes.Sprite;
@@ -10,7 +11,7 @@ public class SimulationModel<c> {
     Scene scene;
     Cell c;
     public SimulationModel() {
-        c = new Cell(2,2);
+        c = new Cell(1,1);
     }
     public void update() {
         c.update();
@@ -27,4 +28,26 @@ public class SimulationModel<c> {
         sprites.add(c.getSprite());
         return sprites;
     }
+    public class Cell {
+        private int x;
+        private int y;
+
+        public Cell(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public Shape getShape() {
+            return new Point(x,y);
+        }
+
+        public void update() {
+            System.out.println("test1");
+        }
+        public Sprite getSprite() {
+            return null;
+        }
+
+    }
+
 }
